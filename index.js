@@ -4,7 +4,7 @@ require('dotenv').config()
 const client = new Discord.Client();
 
 const isURL = (message = Discord.Message) => {
-    return new RegExp("((^)(.|\n)*(https|http):\/\/.*(goodsrv.de|jitsi.de|jitsi.anne-frank-gymnasium.de))\/.*").test(message.content);
+    return new RegExp(`((^)(.|\n)*(https|http):\/\/.*(${process.env.ELIMINATION_URLS}))\/.*`).test(message.content);
 }
 
 client.on("message", function (message) { 
