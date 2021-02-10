@@ -14,7 +14,9 @@ client.on("message", function (message) {
         setTimeout(() => {
             if (process.env.ELIMINATION_SEND_REPLY) {
                 console.log("replying")
-                message.reply(process.env.ElIMINATION_REPLY_GIF).catch(console.error);
+                message.reply(process.env.ELIMINATION_REPLY_GIF).catch(console.error).then(msg => {
+                    msg.delete({ timeout: process.env.ELIMINATION_TIMEOUT });
+                }).catch(console.error);
             }
             message.delete({ timeout: 0, reason: "Message contained infected link and was eliminated" }).then(msg => {
                 console.log(`eliminated message from ${message.author.username}`);
