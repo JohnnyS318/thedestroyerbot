@@ -1,0 +1,38 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start'
+1 verbose cli ]
+2 info using npm@6.14.11
+3 info using node@v14.15.5
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle thedestroyer@1.0.0~prestart: thedestroyer@1.0.0
+6 info lifecycle thedestroyer@1.0.0~start: thedestroyer@1.0.0
+7 verbose lifecycle thedestroyer@1.0.0~start: unsafe-perm in lifecycle true
+8 verbose lifecycle thedestroyer@1.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\jonas\src\TheDestroyer\node_modules\.bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GnuPG\bin;C:\tools\msys64\usr\bin;C:\tools\msys64;C:\Users\jonas\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts;C:\Program Files\swipl\bin;C:\Program Files\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\OpenSSH-Win64;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Go\bin;C:\Program Files\nodejs\;C:\Program Files\heroku\bin;C:\Users\jonas\AppData\Local\Microsoft\WindowsApps;C:\Users\jonas\AppData\Local\Yarn\bin;C:\Program Files (x86)\GitHub CLI\;C:\Users\jonas\AppData\Local\GitHubDesktop\bin;C:\tools\msys64;C:\Users\jonas\.dotnet\tools;C:\Users\jonas\go\bin;C:\Users\jonas\AppData\Roaming\npm;C:\Program Files\heroku\bin
+9 verbose lifecycle thedestroyer@1.0.0~start: CWD: C:\Users\jonas\src\TheDestroyer
+10 silly lifecycle thedestroyer@1.0.0~start: Args: [ '/d /s /c', 'node run index' ]
+11 silly lifecycle thedestroyer@1.0.0~start: Returned: code: 1  signal: null
+12 info lifecycle thedestroyer@1.0.0~start: Failed to exec start script
+13 verbose stack Error: thedestroyer@1.0.0 start: `node run index`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:315:20)
+13 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\lib\spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:315:20)
+13 verbose stack     at maybeClose (internal/child_process.js:1048:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
+14 verbose pkgid thedestroyer@1.0.0
+15 verbose cwd C:\Users\jonas\src\TheDestroyer
+16 verbose Windows_NT 10.0.19042
+17 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+18 verbose node v14.15.5
+19 verbose npm  v6.14.11
+20 error code ELIFECYCLE
+21 error errno 1
+22 error thedestroyer@1.0.0 start: `node run index`
+22 error Exit status 1
+23 error Failed at the thedestroyer@1.0.0 start script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]

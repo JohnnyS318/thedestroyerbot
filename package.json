@@ -1,0 +1,27 @@
+{
+  "name": "thedestroyer",
+  "version": "1.0.0",
+  "description": "TheDestroyer destroys any text that could harm us. It will take a minute to eliminate the thread",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "github.com/JohnnyS318/TheDestroyer"
+  },
+  "author": "Jonas Schneider",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
