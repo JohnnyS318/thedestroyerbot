@@ -20,8 +20,9 @@ client.on("message", function (message) {
         if (msg.startsWith("w2g")) {
             const parts = msg.split(" ");
             createRoom(parts.length >= 2 ? parts[1] : "").then(link => {
-                message.reply("Watch2gether link is: " + "https://w2g.tv/rooms/" + link).catch(console.error).then(() => {
+                message.reply("Watch2gether link is: " + "https://w2g.tv/rooms/" + link).catch(console.error).then(reply => {
                     console.log("Link published: " + link)
+                    reply.delete({timeout: "7200000"})
                 })
             });
         }
