@@ -24,6 +24,7 @@ client.on("message", function (message) {
                     console.log("Link published: " + link)
                     reply.delete({timeout: "7200000"})
                 })
+                message.delete({timeout: 0, reason: "Requested link was published"})
             });
         }
     }
