@@ -1,5 +1,8 @@
-export const createRoom = (url = "") => {
-    return fetch("https://w2g.tv/rooms/create.json", {
+const fetch = require("node-fetch");
+
+const createRoom = async (url = "") => {
+    console.log("Creating Room... with default link: " + url)
+    const res = await fetch("https://w2g.tv/rooms/create.json", {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -11,9 +14,10 @@ export const createRoom = (url = "") => {
             "bg_color": "#000000",
             "bg_opacity": "50"
         })
-    })
-        .then(response => response.json())
-        .then((data) => {
-            return data.streamkey;
-        });
+    });
+    const data = await res.json();
+    return data.streamkey;
+}
+module.exports = {
+    createRoom: createRoom
 }
